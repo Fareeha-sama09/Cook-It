@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CookIt! - Your Cooking Companion</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <style>
+        body {
+            background: #f8f8f8;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #ff7043;
+            color: #fff;
+            padding: 1.5rem 0 1rem 0;
+            text-align: center;
+        }
+        nav {
+            margin-top: 0.5rem;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1.2rem;
+            font-weight: 500;
+            font-size: 1.1rem;
+            transition: color 0.2s;
+        }
+        nav a:hover {
+            color: #ffe0b2;
+        }
+        .hero {
+            background: #fff3e0;
+            padding: 2.5rem 2rem 2rem 2rem;
+            margin: 2rem auto 1.5rem auto;
+            border-radius: 18px;
+            max-width: 700px;
+            box-shadow: 0 2px 12px rgba(255,112,67,0.08);
+            text-align: center;
+        }
+        .cta {
+            display: inline-block;
+            margin-top: 1.5rem;
+            padding: 0.8rem 2.2rem;
+            background: #ff7043;
+            color: #fff;
+            border-radius: 30px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            text-decoration: none;
+            box-shadow: 0 2px 8px rgba(255,112,67,0.12);
+            transition: background 0.2s;
+        }
+        .cta:hover {
+            background: #ff5722;
+        }
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+            margin: 0 auto 2.5rem auto;
+            max-width: 1000px;
+        }
+        .feature-card {
+            background: #fff;
+            border-radius: 14px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            padding: 2rem 1.5rem;
+            flex: 1 1 250px;
+            min-width: 250px;
+            max-width: 320px;
+            text-align: center;
+        }
+        .feature-card h3 {
+            color: #ff7043;
+            margin-bottom: 0.7rem;
+        }
+        .feature-card img {
+            width: 60px;
+            margin-bottom: 1rem;
+        }
+        .sample-recipes {
+            background: #fff;
+            border-radius: 14px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            max-width: 900px;
+            margin: 0 auto 2.5rem auto;
+            padding: 2rem 1.5rem;
+        }
+        .sample-recipes h2 {
+            color: #ff7043;
+            margin-bottom: 1.2rem;
+        }
+        .recipe-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            justify-content: center;
+        }
+        .recipe-card {
+            background: #fff3e0;
+            border-radius: 10px;
+            box-shadow: 0 1px 4px rgba(255,112,67,0.08);
+            padding: 1rem 1rem 1.2rem 1rem;
+            width: 220px;
+            text-align: center;
+        }
+        .recipe-card img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 0.7rem;
+        }
+        .recipe-card h4 {
+            margin: 0.5rem 0 0.3rem 0;
+            color: #ff7043;
+        }
+        footer {
+            background: #ff7043;
+            color: #fff;
+            text-align: center;
+            padding: 1.2rem 0 1rem 0;
+            margin-top: 2rem;
+        }
+        @media (max-width: 900px) {
+            .features { flex-direction: column; gap: 1.2rem; }
+            .sample-recipes { padding: 1.2rem 0.5rem; }
+        }
+    </style>
+    <!-- SEO & Meta -->
+    <meta name="description" content="CookIt! - Find recipes, plan your diet, and get personalized meal suggestions.">
+    <meta name="keywords" content="recipes, cooking, diet, meal planner, food, healthy, suggestions">
+</head>
+<body>
+    <header>
+        <h1>CookIt!</h1>
+        <nav aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="login.php">Login</a>
+            <a href="register.php">Register</a>
+            <a href="recipes.php">Recipes</a>
+            <a href="diet.php">Diet Planning</a>
+            <a href="recipesuggestion.php">Recipe Suggestions</a>
+            <a href="create_diet.php">Create Diet Plan</a>
+            <a href="profile.php">My Profile</a>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h2>Welcome to CookIt!</h2>
+            <p>Your one-stop solution for recipes, diet planning, and more.<br>
+            Search for recipes, get suggestions based on your ingredients, and plan your meals with ease!</p>
+            <a href="register.php" class="cta">Get Started</a>
+        </section>
+        <section class="features">
+            <div class="feature-card">
+                <img src="https://img.icons8.com/color/96/000000/ingredients.png" alt="Recipe Search">
+                <h3>Recipe Search</h3>
+                <p>Find thousands of recipes by name or ingredient. Discover new dishes every day!</p>
+            </div>
+            <div class="feature-card">
+                <img src="https://img.icons8.com/color/96/000000/meal.png" alt="Diet Planning">
+                <h3>Diet Planning</h3>
+                <p>Plan your meals for the week and track your nutrition with our easy-to-use tools.<br>
+                <span style="color:#ff7043;font-size:0.98em;">(Login required)</span></p>
+            </div>
+            <div class="feature-card">
+                <img src="https://img.icons8.com/color/96/000000/cook-male.png" alt="Personalized Suggestions">
+                <h3>Personalized Suggestions</h3>
+                <p>Get recipe suggestions based on what you have at home and your dietary preferences.<br>
+                <span style="color:#ff7043;font-size:0.98em;">(Login required)</span></p>
+            </div>
+            <div class="feature-card">
+                <img src="https://img.icons8.com/color/96/000000/chef-hat.png" alt="Create Diet Plan">
+                <h3>Create Diet Plan</h3>
+                <p>Let CookIt generate a diet plan for you based on your goals and preferences.<br>
+                <span style="color:#ff7043;font-size:0.98em;">(Login required)</span></p>
+            </div>
+        </section>
+        <section class="sample-recipes">
+            <h2>Popular Recipes</h2>
+            <div class="recipe-list">
+                <div class="recipe-card">
+                    <img src="c:\Users\HP\OneDrive\Pictures\Screenshots\Screenshot 2025-07-05 091151.png" alt="Spaghetti Bolognese">
+                    <h4>Spaghetti Bolognese</h4>
+                    <p>Classic Italian pasta with rich meat sauce.</p>
+                </div>
+                <div class="recipe-card">
+                    <img src="c:\Users\HP\OneDrive\Pictures\Screenshots\Screenshot 2025-07-05 091021.png" alt="Chicken Caesar Salad">
+                    <h4>Chicken Caesar Salad</h4>
+                    <p>Crisp romaine, grilled chicken, and creamy Caesar dressing.</p>
+                </div>
+                <div class="recipe-card">
+                    <img src="c:\Users\HP\OneDrive\Pictures\Screenshots\Screenshot 2025-07-05 091443.png" alt="Vegetable Stir Fry">
+                    <h4>Vegetable Stir Fry</h4>
+                    <p>Colorful veggies sautéed in a savory sauce.</p>
+                </div>
+                <div class="recipe-card">
+                    <img src="c:\Users\HP\OneDrive\Pictures\Screenshots\Screenshot 2025-07-05 091350.png" alt="Avocado Toast">
+                    <h4>Avocado Toast</h4>
+                    <p>Toasted bread topped with creamy avocado and spices.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 CookIt! All rights reserved. | <a href="privacy.php" style="color:#fff;text-decoration:underline;">Privacy Policy</a></p>
+    </footer>
+</body>
+</html>
